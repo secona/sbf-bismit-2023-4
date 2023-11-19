@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -15,7 +16,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + ' mt-24'}>
+        <nav className='flex flex-row justify-between items-center fixed top-0 w-full bg-transparent backdrop-blur px-16 py-5 border-b-2 border-white/10 border-solid'>
+          <h1 className='text-5xl cursor-pointer'>
+            <span className='border-[#FFA364] text-[#FFA364]'>Pyt</span>
+            <span className='border-[#FFEBD2] text-[#FFEBD2]'>h</span>
+            <span className='border-[#AF4F41] text-[#AF4F41]'>ern</span>
+          </h1>
+          <div className='flex flex-row gap-8 items-center'>
+            <Link className="hover:border-b-2" href="/about-us">About Us</Link>
+            <Link className="hover:border-b-2" href="/login">Log In</Link>
+            <Link className="hover:border-b-2" href="/signup">Sign Up</Link>
+          </div>
+        </nav>
+        {children}
+      </body>
     </html>
   )
 }
