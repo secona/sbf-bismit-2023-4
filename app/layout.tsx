@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + ' mt-24'}>
+      <body className={inter.className + ' pt-24 min-h-screen'}>
         <nav className='flex flex-row justify-between items-center fixed top-0 w-full bg-transparent backdrop-blur px-16 py-5 border-b-2 border-white/10 border-solid'>
           <h1 className='text-5xl cursor-pointer'>
             <span className='border-[#FFA364] text-[#FFA364]'>Pyt</span>
@@ -30,6 +30,9 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <div className='absolute bottom-0 w-full border-t-2 border-white/10 border-solid p-2 bg-transparent'>
+          <p>Pythern - 2023</p>
+        </div>
       </body>
     </html>
   )
