@@ -5,7 +5,7 @@ export default function Page() {
     <div className="flex flex-col justify-center min-h-screen gap-7">
       <div className="flex justify-center items-center gap-2 mb-2">
         <Link
-          href="/level"
+          href="/"
           className="border-2 border-white/10 py-2 px-3 rounded-lg flex flex-col items-center justify-center"
         >
           Back
