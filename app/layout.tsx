@@ -1,8 +1,18 @@
 import Link from "next/link";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  preload: false,
+  subsets: ["latin"],
+});
+
+const clashDisplay = localFont({
+  variable: "--font-clash-display",
+  src: "./ClashDisplay-Medium.woff2",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -17,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={inter.className + " min-h-screen flex flex-col relative"}
+        className={`${clashDisplay.variable} ${spaceGrotesk.variable} min-h-screen flex flex-col relative`}
       >
         <nav className="flex flex-row justify-between items-center fixed top-0 w-full bg-transparent backdrop-blur px-16 py-5 border-b-2 border-white/10 border-solid">
           <Link href="/">
