@@ -1,8 +1,8 @@
 export default function Login() {
   return (
     <div className="mx-auto min-h-screen flex flex-col gap-2 items-center justify-center w-full">
-      <form className="border-white/10 border-2 border-solid rounded-lg p-10 flex flex-col gap-2 justify-center">
-        <p className="text-4xl mb-6 text-center">Login</p>
+      <form className="border-white/10 border-2 border-solid rounded-lg py-12 px-20 flex flex-col gap-2 justify-center">
+        <p className="text-7xl mb-12 text-center">Login</p>
         <input
           className="rounded-lg py-2 px-3 text-black"
           placeholder="Email"
