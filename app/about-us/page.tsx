@@ -18,10 +18,6 @@ export default function AboutUs() {
             <p className="text-xs">UI/UX Designer</p>
           </div>
           <div className="rounded-lg py-2 px-5 bg-green-600 text-center">
-            <p>Ananda Dwi Hanifa</p>
-            <p className="text-xs">UI/UX Designer</p>
-          </div>
-          <div className="rounded-lg py-2 px-5 bg-green-600 text-center">
             <p>Felita Zahra D</p>
             <p className="text-xs">UI/UX Designer</p>
           </div>
